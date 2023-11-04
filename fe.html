@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Assistant</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0073e6, #00a2e1, #00c0db);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .header {
+            background: #00a2e1;
+            padding: 10px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .menu-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .menu-options {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background: white;
+            color: #0073e6;
+            border: 1px solid #0073e6;
+            list-style: none;
+            padding: 0;
+        }
+        .menu-options li {
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .menu-options li:hover {
+            background: #0073e6;
+            color: white;
+        }
+        .subject-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .subject-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .search-bar {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            padding: 10px;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .search-btn {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .search-btn:hover {
+            background: #00a2e1;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Assistant</h1>
+    </div>
+    <div class="menu">
+        <div class="menu-icon"></div>
+        <ul class="menu-options">
+            <li id="teacher-schedule">Teacher Schedule</li>
+            <li id="student-results">Student Results</li>
+            <li id="logout">Logout</li>
+        </ul>
+    </div>
+    <div class="subject-card" id="data-science">
+        Data Science
+    </div>
+    <div class="subject-card" id="physics">
+        Physics
+    </div>
+    <!-- Add more subject cards here -->
+
+    <div class="search-bar">
+        <input type="text" id="user-query" placeholder="Ask me...">
+        <button id="ask-btn" class="search-btn">Ask</button>
+    </div>
+    <div class="response" id="response-box">
+        <!-- Response from the AI assistant will be displayed here -->
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuOptions = document.querySelector('.menu-options');
+        const userQueryInput = document.querySelector('#user-query');
+        const askButton = document.querySelector('#ask-btn');
+        const responseBox = document.querySelector('#response-box');
+
+        // Toggle menu options
+        menuIcon.addEventListener('click', () => {
+            menuOptions.style.display = menuOptions.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Handle menu option clicks
+        document.getElementById('teacher-schedule').addEventListener('click', () => {
+            // Implement teacher schedule functionality
+            responseBox.textContent = "Teacher Schedule - Functionality to be implemented.";
+        });
+
+        document.getElementById('student-results').addEventListener('click', () => {
+            // Implement student results functionality
+            responseBox.textContent = "Student Results - Functionality to be implemented.";
+        });
+
+        document.getElementById('logout').addEventListener('click', () => {
+            // Implement logout functionality
+            responseBox.textContent = "Logout - Functionality to be implemented.";
+        });
+
+        // Handle subject card clicks
+        document.getElementById('data-science').addEventListener('click', () => {
+            // Handle Data Science subject selection
+            userQueryInput.value = "What is data science?";
+        });

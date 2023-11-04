@@ -1,0 +1,24 @@
+data_science_dataset = [
+    {
+        "question": "What is data science?",
+        "answer": "Data science is an interdisciplinary field that uses scientific methods, algorithms, processes, and systems to extract knowledge and insights from structured and unstructured data."
+    },
+    {
+        "question": "What is the CRISP-DM process in data science?",
+        "answer": "CRISP-DM (Cross-Industry Standard Process for Data Mining) is a widely-used process model for data mining and data science projects. It consists of six phases: Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment."
+    },
+    {
+        "question": "Explain the concept of machine learning.",
+        "answer": "Machine learning is a subset of artificial intelligence that involves developing algorithms and models that allow computers to learn and make predictions or decisions without being explicitly programmed. It uses data to improve its performance over time."
+    },
+    {
+        "question": "What is the difference between supervised and unsupervised learning?",
+        "answer": "Supervised learning is a type of machine learning where the model is trained on a labeled dataset, meaning it is provided with input-output pairs. Unsupervised learning, on the other hand, involves learning from unlabeled data to discover patterns or relationships in the data."
+    },
+    {
+        "question": "What is the role of data preprocessing in data science?",
+        "answer": "Data preprocessing is the process of cleaning and transforming raw data into a suitable format for analysis. It involves tasks like data cleaning, missing value imputation, feature scaling, and more to ensure data quality."
+    }
+]
+
+# You can add more questions and answers to expand the dataset.
