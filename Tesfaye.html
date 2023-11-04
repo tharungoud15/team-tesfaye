@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <div class="bg-container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name="" required="">
+                        <label>Password</label>
+                    </div>
+                    <button class="button" onclick="display('sectiontopic')">Get Started</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="sectiontopic">
+        <div class="bg-containers">
+            <div class="d-flex flex-row">
+                <div class="card" onclick="display('sectiondatascience')">
+                    <h1 class="data-heading">Data Science</h1>
+                    <img src="https://www.analyticsinsight.net/wp-content/uploads/2021/08/7-Benefits-of-Data-Science.jpg" />
+                </div>
+                <div class="card" onclick="display('sectionphysics')">
+                    <h1 class="data-heading">Physics</h1>
+                    <img src="https://www.vedantu.com/seo/content-images/bc692335-2c03-4559-9cf0-dff766298eef.jpg" />
+                </div>
+                <div class="card" onclick="display('sectioncprogram')">
+                    <h1 class="data-heading">C-Programming</h1>
+                    <img src="https://miro.medium.com/v2/resize:fit:500/0*tKwj6cwBVAphhV9B.jpg" />
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="card" onclick="display('sectiondatastructures')">
+                    <h1 class="data-heading">Data Structures</h1>
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-4d703dc2c8d279875182c19d617764e2-pjlq" />
+                </div>
+                <div class="card" onclick="display('sectionjavascript')">
+                    <h1 class="data-heading">Java Script</h1>
+                    <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png" />
+                </div>
+                <div class="card" onclick="display('sectionmachinelearning')">
+                    <h1 class="data-heading">Machine Learning</h1>
+                    <img src="https://t4.ftcdn.net/jpg/03/98/18/19/360_F_398181949_BudYmmAeTPJwDz6HMxwf1PL3ZNIblohm.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondatascience">
+        <div class="main-container">
+            <div class="bg-containers1">
+                <div class="ai-search-header text-center">
+                    <img class="ai-logo" src="https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp" />
+                    <input id="searchInput" placeholder="Ask me a question and press Enter to search" type="search" class="search-input w-100" />
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                        </div>
+                    </div>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionphysics">
+        <div class="main-container">
+            <div class="bg-containers1">
+                <div class="ai-search-header text-center">
+                    <img class="ai-logo" src="https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp" />
+                    <input id="searchInput" placeholder="Ask me a question and press Enter to search" type="search" class="search-input w-100" />
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                        </div>
+                    </div>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+    <div id="sectioncprogram">
+        <div class="main-container">
+            <div class="bg-containers1">
+                <div class="ai-search-header text-center">
+                    <img class="ai-logo" src="https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp" />
+                    <input id="searchInput" placeholder="Ask me a question and press Enter to search" type="search" class="search-input w-100" />
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                        </div>
+                    </div>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondatastructures">
+        <div class="main-container">
+            <div class="bg-containers1">
+                <div class="ai-search-header text-center">
+                    <img class="ai-logo" src="https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp" />
+                    <input id="searchInput" placeholder="Ask me a question and press Enter to search" type="search" class="search-input w-100" />
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                        </div>
+                    </div>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionjavascript">
+        <div class="main-container">
+            <div class="bg-containers1">
+                <div class="ai-search-header text-center">
+                    <img class="ai-logo" src="https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp" />
+                    <input id="searchInput" placeholder="Ask me a question and press Enter to search" type="search" class="search-input w-100" />
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                        </div>
+                    </div>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionmachinelearning">
+        <div class="main-container">
+            <div class="bg-containers1">
+                <div class="ai-search-header text-center">
+                    <img class="ai-logo" src="https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp" />
+                    <input id="searchInput" placeholder="Ask me a question and press Enter to search" type="search" class="search-input w-100" />
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                        </div>
+                    </div>
+                </div>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+</html>
